@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #e6e9ec;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .sec1 {
+            width: 70%;
+z-index: 300px;
+            top:0;
+            position:sticky;
+            background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+position: sticky;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 2px;
+            align-items: center;
+        }
+
+
+        .pr-img-sec {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .pr-data {
+            width: 40%;
+            display: flex;
+        
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: #f5f5f5;
+        }
+
+
+        .pr-img {
+            height: 7.5rem;
+            width: 7rem;
+            border-radius: 50%;
+        }
+
+
+        .sec2 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .sec3 {
+            width: 70%;
+            height: 22rem;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .sec4 {
+            width: 70%;
+            height: 19rem;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+        .sec5 {
+            width: 70%;
+            height: 70rem;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+        .sec6 {
+            width: 70%;
+            height: 70rem;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .sec-title {
+            /* height: 10%; */
+            color:rgba(23, 12, 12, 0.66);
+            font-weight: bold;
+            font-size: 24px;
+            padding-top: 2vh;
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        th{
+            background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+        }
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+            
+        }
+
+
+        .companies {
+            font-weight: bold;
+
+
+            color: aquamarine;
+        }
+        ul{
+            padding-left: 3vw;
+        }
+        .p-5{
+            padding-top:2vh;
+        }
+        .skill-list{
+            padding-top: 1vh;
+        }
+        .cert-desc
+        {
+            list-style-type:none;
+
+        }
+        .cert-title
+        {
+            padding-top: 1vh;
+        }
+        *::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #485563;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="sec1">
+        <div class="pr-img-sec">
+            <img src="./assets/img/pr.jpg" alt="profile pic" class="pr-img">
+        </div>
+        <div class="pr-data">
+            <h1>Sudharsan V</h1>
+            <h5>sudharsan152005@gmail.com</h5>
+            
+              
+        </div>
+    </div>
+
+    <div class="sec2">
+        <h1 class="sec-title"> Objective</h1>
+        <p>I am Sudharsan V, an proficient coding enthusiast and a Full Stack Web Developer. Currently working to improve my skills.</p>
+    </div>
+
+    <div class="sec3">
+        <h1 class="sec-title">Education</h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>BE CSE</td>
+                <td>SIET</td>
+                <td>8.30 CGPA</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>VVMHSS</td>
+                <td>88.3%</td>
+            </tr>
+        </table>
+    </div>
+    <div class="sec4">
+        <h1 class="sec-title">Skills</h1>
+        <ul>
+            <li class="skill-list"><b>Programming languages:</b> Java, C, Python</li>
+            <li class="skill-list"><b>Web development: </b>HTML, CSS, JavaScript, React.js, Bootstrap</li>
+            <li class="skill-list"><b>Database:</b> MySQL, MongoDB, PostgreSQL</li>
+        </ul>
+        
+
+
+    </div>
+    <div class="sec5">
+        <h1 class="sec-title">Projects</h1>
+        <p class="p-5"><b>1. AI Powered Emotional Resilience Coach</b></p>
+        <ul>
+            <li>This project is based on Machine learning along with Advanced Web Development Technologies.</li>
+            <li>Our Emotional Resilience Coach detects the human emotions by filling suvrvey forms and provides presonalized suggestions and recommendations to reduce their stress level.</li>
+            <li><b>Tech Stack:</b> <i>React.js, node.js, MongoDB, Pytarch, Tensorflow</i></li>
+        </ul>
+        <p class="p-5"><b>2. ANPR & Alert System</b></p>
+        <ul>
+            <li>This project is built using Python and openCV (Computer Vision).It detects the number plates and recognize the plate number and check with existing database.</li>
+            <li>If it matches, then the vehicles are allowed to enter the apartment and SMS sent to the owner using twilio API. If not the security got alerted. This system reduces the complex work and provide ease to the security</li>
+            <li><b>Tech Stack:</b> <i>Python, OpenCV, OCR, Twilio API, Tkinter</i></li>
+        </ul>
+        <p class="p-5"><b>3. Street Paws based on Animal Welfare Organisations</b></p>
+        <ul>
+            <li>This project is built using web development technologies and integrated with SQL database.</li>
+            <li>Street Paws makes the street animals adoption easier by combining various Animal Welfare Organisations which helps to find street animals a lovely home. This is non-profit social serving platform.</li>
+            <li><b>Tech Stack:</b> <i>HTML, CSS, PHP, JavaScript, BootStrap, MySQL</i></li>
+        </ul>
+        
+    </div>
+    <div class="sec6">
+        <h1 class="sec-title"> Certifications</h1>
+        <ul>
+            <li class="cert-title"><b>OpenCV Bootcamp</b> by OpenCV University</li>
+            <p><i>Gained hands-on experience with computer vision, image processing, and OpenCV tools and libraries.</i></p>
+            <li class="cert-title"><b>Java (Basic)</b> by HackerRank</li>
+            <p><i>Certified in foundational Java programming concepts, problem-solving, and algorithm development.</i></p>
+            <li class="cert-title"><b>SQL (Intermediate)</b> by Sololearn</li>
+            <p><i>Developed intermediate skills in SQL queries, database management, and data manipulation techniques.</i></p>
+        </ul>
+    </div>
+    <script>
+        let x=10;
+        let string="hello";
+        let boolean =false;
+        let nullval=null;
+        let undefinedval=undefined;
+        let djs={
+            name:"arjun", 
+            phone:9585486778,
+            alive:true
+        }
+        console.log(x);
+        console.log(string);
+        console.log(boolean);
+        console.log(nullval);
+        console.log(undefinedval);
+        console.log(djs);
+    </script>
+
+</body>
+</html>

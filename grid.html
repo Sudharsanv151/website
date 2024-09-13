@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .black{
+            background-color: black;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: repeat(3,333%);
+            grid-gap:100px;
+            vertical-align: 10px;
+        }
+        @keyframes myanim{
+            0%{
+                transform: translateX(-10%);
+                rotate:9deg;
+                scale:0%
+            }
+            50%{
+                transform: translateX(0%);
+                rotate:10deg;
+                scale:50%;
+            }
+            100%{
+                transform:translateX(10%);
+                rotate: 600deg;
+                scale:100%;
+                opacity: 1;
+            }
+        }
+
+        .yellow{
+            animation: s myanim linear infinite;
+        }
+        .green:hover{
+            background-color: red;
+            transition: 0.6s background-color ease-in;
+        }
+        .black{
+            animation: 2s myanim ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box yellow">Y</div>
+        <div class="box green">G</div>
+        <div class="box black">B</div>
+    </div>
+</body>
+</html>

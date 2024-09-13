@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .bio-data{
+            display: flex;
+            height:55vh;
+            width: 55vw;
+            border: 2px solid;
+            align-items: center;
+            flex-direction: column;
+            background-color:darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="bio-data">
+            <h1>Bio Data Form</h1>
+            <input type="text" id="name" placeholder="Enter Name"><br><br>
+            <input type="number" id="age" placeholder="Enter Age"><br><br>
+            <input type="email" id="mail" placeholder="Enter Email"><br><br>
+            <input type="date" id="dob"><br><br>
+            <button id="submit" onclick="parseData(event)">Submit here</button>
+
+    </form>
+    <h1 id="display"></h1>
+
+    <script>
+            function parseData(e)
+            {       
+                e.preventDefault(); 
+                let name = document.getElementById("name").value                    
+                let age = document.getElementById("age").value
+                let email = document.getElementById("mail").value
+                let dob = document.getElementById("dob").value
+                document.getElementById("display").innerHTML=name;
+            }    
+    </script>
+</body>
+</html>
