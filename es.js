@@ -7,6 +7,8 @@ const f2=()=>{
 }
 console.log(f1);
 
+fuc
+
 const f3=()=> console.log("Men")
 f1()
 f2()

@@ -5,25 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+         body {
             display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh;       
+            margin: 0;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            background-image: url('https://wallpapercave.com/wp/wp5063342.png');
+             background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
         }
         .bio-data{
             display: flex;
             height:55vh;
-            width: 55vw;
-            border: 2px solid;
+            width: 44vw;
+            border: 2px whitesmoke;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
-            background-color:darkgray;
+            background: #50C9C3;  
+background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3); 
+background: linear-gradient(to right, #96DEDA, #50C9C3); 
+
+
+            padding: 10vh;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
+        input, button {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        @keyframes myanim{
+            0%{
+                transform: translateX(-10%);
+                rotate:9deg;
+                scale:0%
+            }
+            50%{
+                transform: translateX(0%);
+                rotate:10deg;
+                scale:50%;
+            }
+            100%{
+                transform:translateX(10%);
+                rotate: 600deg;
+                scale:100%;
+                opacity: 1;
+            }
+        }
+        h1{
+            color:#f5f5f5;
+            transition: 0.6s background-color ease-in;
+            
+        }
+
 
     </style>
 </head>
 <body>
     <form class="bio-data">
-            <h1>Bio Data Form</h1>
+            <h1>BIO     DATA</h1>
             <input type="text" id="name" placeholder="Enter Name"><br><br>
             <input type="number" id="age" placeholder="Enter Age"><br><br>
             <input type="email" id="mail" placeholder="Enter Email"><br><br>
@@ -41,7 +87,24 @@
                 let age = document.getElementById("age").value
                 let email = document.getElementById("mail").value
                 let dob = document.getElementById("dob").value
-                document.getElementById("display").innerHTML=name;
+                if(name !=="" && email!=="" && age!=="" && dob!==""){
+                    let user="sudhir"
+                    if(name===user){
+                    alert("Username "+user+" already Exists");
+                    }
+                }
+                else{
+                    console.log("Empty values not allowed");
+                }
+
+                const data={
+                    username:name,
+                    userage:age>=18 ? 'major':'minor',
+                    useremail:email,
+                    userdob:dob
+                }
+                const {username,userage,useremail, userdob}=data;
+                console.log(username,userage)
             }    
     </script>
 </body>
